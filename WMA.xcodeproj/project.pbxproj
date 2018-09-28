@@ -8,17 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		166F55E3824D8D00BFF7559C /* Pods_WMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D2ABE5DC671E3E8497DCEB /* Pods_WMA.framework */; };
+		F138DB31215D992100EC8D39 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138DB30215D992100EC8D39 /* WelcomePage.swift */; };
+		F138DB33215D997300EC8D39 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138DB32215D997300EC8D39 /* SignUp.swift */; };
+		F138DB35215D9A0300EC8D39 /* UserHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138DB34215D9A0300EC8D39 /* UserHome.swift */; };
+		F138DB38215DA50100EC8D39 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F138DB37215DA50100EC8D39 /* User.swift */; };
 		F160EA652155518D000AD184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160EA642155518D000AD184 /* AppDelegate.swift */; };
-		F160EA672155518D000AD184 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160EA662155518D000AD184 /* MainController.swift */; };
 		F160EA6A2155518D000AD184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160EA682155518D000AD184 /* Main.storyboard */; };
 		F160EA6D2155518D000AD184 /* WMA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F160EA6B2155518D000AD184 /* WMA.xcdatamodeld */; };
 		F160EA6F2155518E000AD184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F160EA6E2155518E000AD184 /* Assets.xcassets */; };
 		F160EA722155518E000AD184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160EA702155518E000AD184 /* LaunchScreen.storyboard */; };
-		F160EA7B215551FA000AD184 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160EA7A215551FA000AD184 /* Login.swift */; };
-		F160EA7D21555C98000AD184 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160EA7C21555C98000AD184 /* Register.swift */; };
-		F160EA7F2155657A000AD184 /* EmployerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160EA7E2155657A000AD184 /* EmployerHome.swift */; };
-		F160EA81215565E8000AD184 /* EmployeeHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160EA80215565E8000AD184 /* EmployeeHome.swift */; };
-		F160EA8321556F96000AD184 /* EmployeeRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160EA8221556F96000AD184 /* EmployeeRegister.swift */; };
 		F1A3E09B215D7AD10037BFAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1A3E09A215D7AD10037BFAB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -26,19 +24,17 @@
 		1A4740376F2F59EC0646E2FD /* Pods-WMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMA/Pods-WMA.debug.xcconfig"; sourceTree = "<group>"; };
 		63D2ABE5DC671E3E8497DCEB /* Pods_WMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE9A85DBA68A86C40588031 /* Pods-WMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMA.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMA/Pods-WMA.release.xcconfig"; sourceTree = "<group>"; };
+		F138DB30215D992100EC8D39 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		F138DB32215D997300EC8D39 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		F138DB34215D9A0300EC8D39 /* UserHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHome.swift; sourceTree = "<group>"; };
+		F138DB37215DA50100EC8D39 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F160EA612155518D000AD184 /* WMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F160EA642155518D000AD184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F160EA662155518D000AD184 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		F160EA692155518D000AD184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F160EA6C2155518D000AD184 /* WMA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WMA.xcdatamodel; sourceTree = "<group>"; };
 		F160EA6E2155518E000AD184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F160EA712155518E000AD184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F160EA732155518E000AD184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F160EA7A215551FA000AD184 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		F160EA7C21555C98000AD184 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		F160EA7E2155657A000AD184 /* EmployerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerHome.swift; sourceTree = "<group>"; };
-		F160EA80215565E8000AD184 /* EmployeeHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHome.swift; sourceTree = "<group>"; };
-		F160EA8221556F96000AD184 /* EmployeeRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRegister.swift; sourceTree = "<group>"; };
 		F1A3E09A215D7AD10037BFAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +67,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F138DB36215DA4E400EC8D39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F138DB37215DA50100EC8D39 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F160EA582155518D000AD184 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +96,7 @@
 		F160EA632155518D000AD184 /* WMA */ = {
 			isa = PBXGroup;
 			children = (
-				F160EA642155518D000AD184 /* AppDelegate.swift */,
+				F138DB36215DA4E400EC8D39 /* Model */,
 				F160EA79215551A0000AD184 /* Controllers */,
 				F160EA682155518D000AD184 /* Main.storyboard */,
 				F160EA6E2155518E000AD184 /* Assets.xcassets */,
@@ -107,12 +111,10 @@
 		F160EA79215551A0000AD184 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F160EA662155518D000AD184 /* MainController.swift */,
-				F160EA7A215551FA000AD184 /* Login.swift */,
-				F160EA7C21555C98000AD184 /* Register.swift */,
-				F160EA7E2155657A000AD184 /* EmployerHome.swift */,
-				F160EA80215565E8000AD184 /* EmployeeHome.swift */,
-				F160EA8221556F96000AD184 /* EmployeeRegister.swift */,
+				F160EA642155518D000AD184 /* AppDelegate.swift */,
+				F138DB30215D992100EC8D39 /* WelcomePage.swift */,
+				F138DB32215D997300EC8D39 /* SignUp.swift */,
+				F138DB34215D9A0300EC8D39 /* UserHome.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,12 +214,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WMA/Pods-WMA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,14 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F160EA672155518D000AD184 /* MainController.swift in Sources */,
+				F138DB31215D992100EC8D39 /* WelcomePage.swift in Sources */,
+				F138DB33215D997300EC8D39 /* SignUp.swift in Sources */,
+				F138DB38215DA50100EC8D39 /* User.swift in Sources */,
+				F138DB35215D9A0300EC8D39 /* UserHome.swift in Sources */,
 				F160EA652155518D000AD184 /* AppDelegate.swift in Sources */,
-				F160EA81215565E8000AD184 /* EmployeeHome.swift in Sources */,
 				F160EA6D2155518D000AD184 /* WMA.xcdatamodeld in Sources */,
-				F160EA7B215551FA000AD184 /* Login.swift in Sources */,
-				F160EA7D21555C98000AD184 /* Register.swift in Sources */,
-				F160EA8321556F96000AD184 /* EmployeeRegister.swift in Sources */,
-				F160EA7F2155657A000AD184 /* EmployerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -370,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -387,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUVT53CRAT;
 				INFOPLIST_FILE = WMA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MUVT53CRAT;
 				INFOPLIST_FILE = WMA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
