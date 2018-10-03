@@ -23,6 +23,19 @@ class SignUp: UIViewController{
     }
     
     
+    func checkBoth() -> Bool{
+        if employeeCheck == employerCheck{
+            let alert = UIAlertController(title: "Both selected", message: "Cannot choose both employer & employee", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"Missing Credentials\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            return true
+        }
+        return false
+    }
+    
+    
     @IBAction func employeeButton(_ sender: UIButton) {
         if sender.isSelected{
             sender.isSelected = false
@@ -31,6 +44,9 @@ class SignUp: UIViewController{
         }else{
             sender.isSelected = true
             employeeCheck = sender.isSelected
+        }
+        if checkBoth() == true{
+            sender.isSelected = false
         }
     }
    
@@ -43,6 +59,9 @@ class SignUp: UIViewController{
         }else{
             sender.isSelected = true
              employerCheck = sender.isSelected
+        }
+        if checkBoth() == true{
+            sender.isSelected = false
         }
     }
     
@@ -57,14 +76,7 @@ class SignUp: UIViewController{
             print("Employee has been checked", employeeCheck)
             print("Employer has been checked", employerCheck)
             
-            if employeeCheck == true && employerCheck == true{
-                let alert = UIAlertController(title: "Position Error", message: "Cannot be both Employer and Employee", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                    NSLog("The \"Missing Credentials\" alert occured.")
-                }))
-                self.present(alert, animated: true, completion: nil)
-            }
-            
+          
             
             
             Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
