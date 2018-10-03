@@ -85,7 +85,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="employeerButton:" destination="YEp-rS-6NH" eventType="touchUpInside" id="HYo-XA-tLR"/>
+                                    <action selector="employerButton:" destination="YEp-rS-6NH" eventType="touchUpInside" id="5rC-rg-ayY"/>
                                 </connections>
                             </button>
                         </subviews>

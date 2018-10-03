@@ -34,18 +34,17 @@ class SignUp: UIViewController{
         }
     }
    
-    @IBAction func employeerButton(_ sender: UIButton) {
+    
+    @IBAction func employerButton(_ sender: UIButton) {
         if sender.isSelected{
             sender.isSelected = false
-            employerCheck = sender.isSelected
+             employerCheck = sender.isSelected
             
         }else{
             sender.isSelected = true
-            employerCheck = sender.isSelected
+             employerCheck = sender.isSelected
         }
     }
-    
-    
     
         @IBAction func registerPressed(_ sender: UIButton) {
             if emailText.text!.isEmpty &&  passwordText.text!.isEmpty{
