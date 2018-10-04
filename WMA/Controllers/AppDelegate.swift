@@ -19,6 +19,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        let myDatabase = Database.database().reference()
+        let username = "Rick"
+        let email = "rics@yahoo.com"
+        let age = 21
+        let employer = true
+        
+        
+        let username1 = "Paul"
+        let email1 = "paulss@yahoo.com"
+        let age1 = 332
+        let employer1 = false
+
+        
+        let userDictionary = ["username": username,"email": email,"age": age,"employer": employer] as [String : Any]
+        let userDictionary1 = ["username": username1,"email": email1,"age": age1, "employer": employer1] as [String : Any]
+        
+        myDatabase.child("users").child("10000000").setValue(userDictionary)
+        myDatabase.child("users").child("11312312").setValue(userDictionary1)
+        
+        //myDatabase.child("users").child("11312312").observe(.childAdded) { (snapshot) in
+           //let snapshotValue = snapshot.value as! Dictionary<String, Any>
+            
+        //}
+        
+    
         return true
     }
 
