@@ -38,10 +38,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         myDatabase.child("users").child("10000000").setValue(userDictionary)
         myDatabase.child("users").child("11312312").setValue(userDictionary1)
         
-        //myDatabase.child("users").child("11312312").observe(.childAdded) { (snapshot) in
-           //let snapshotValue = snapshot.value as! Dictionary<String, Any>
-            
-        //}
+        
+        
+        
+        //Firebase Bool True = 1, Bool false = 0
+        myDatabase.child("users").child("10000000").observe(.value) { (snapshot) in
+            let snapShotValue = snapshot.value as! Dictionary<String, Any>
+            print(snapShotValue)
+        }
         
     
         return true
