@@ -12,10 +12,13 @@ import FirebaseAuth
 
 class SignUp: UIViewController{
     
+    @IBOutlet weak var company: UITextField!
+    @IBOutlet weak var name: UITextField!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     var employeeCheck: Bool?
     var employerCheck: Bool?
+    let myDatabase = Database.database().reference()
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +81,7 @@ class SignUp: UIViewController{
             
           
             
-            
+            //fix email address already in use
             Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
                 if error != nil{
                     if let errCode = AuthErrorCode(rawValue: error!._code) {
@@ -104,13 +107,34 @@ class SignUp: UIViewController{
                             self.present(alert, animated: true, completion: nil)
                             self.emailText.text = ""
                             self.passwordText.text = ""
-                            
+                       
+                        case .emailAlreadyInUse:
+                            print("Email Registered")
+                            let alert = UIAlertController(title: "Email Registered", message: "Enter a different email address", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                                NSLog("The \"EmailAlreadyInUse\" alert occured.")
+                            }))
+                            self.present(alert, animated: true, completion: nil)
+                            self.emailText.text = ""
+                            self.passwordText.text = ""
+                        
+                        case .networkError:
+                            print("Network Error")
+                            let alert = UIAlertController(title: "Network Error", message: "Connect to a data source.", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                                NSLog("The \"NetworkError\" alert occured.")
+                            }))
+                            self.present(alert, animated: true, completion: nil)
+                            self.emailText.text = ""
+                            self.passwordText.text = ""
                         default:
                             
                             print("Create User Error: \(error)")
                         }
                     }
                 }else{
+                    let userDictionary = ["Name": self.name.text,"Email": self.emailText.text,"Company": self.company.text, "Employee": self.employeeCheck,"Employer": self.employerCheck] as [String : Any]
+                    self.myDatabase.child("users").childByAutoId().setValue(userDictionary)
                     self.performSegue(withIdentifier: "goToUserHome", sender: self)
                     
                 }

@@ -19,13 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+      /*
         let myDatabase = Database.database().reference()
         let username = "Rick"
         let email = "rics@yahoo.com"
         let age = 21
         let employer = true
-        
-        
+ 
+    
         let username1 = "Paul"
         let email1 = "paulss@yahoo.com"
         let age1 = 332
@@ -36,17 +37,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let userDictionary1 = ["username": username1,"email": email1,"age": age1, "employer": employer1] as [String : Any]
         
         myDatabase.child("users").child("10000000").setValue(userDictionary)
-        myDatabase.child("users").child("11312312").setValue(userDictionary1)
+        myDatabase.child("users").childByAutoId().setValue(userDictionary1)
+ 
         
         
         
-        
-        //Firebase Bool True = 1, Bool false = 0
+        Firebase Bool True = 1, Bool false = 0
         myDatabase.child("users").child("10000000").observe(.value) { (snapshot) in
             let snapShotValue = snapshot.value as! Dictionary<String, Any>
             print(snapShotValue)
         }
-        
+        */
     
         return true
     }
