@@ -18,6 +18,7 @@
 		F160EA6F2155518E000AD184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F160EA6E2155518E000AD184 /* Assets.xcassets */; };
 		F160EA722155518E000AD184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F160EA702155518E000AD184 /* LaunchScreen.storyboard */; };
 		F1A3E09B215D7AD10037BFAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1A3E09A215D7AD10037BFAB /* GoogleService-Info.plist */; };
+		F1E4B640216EA62400D91440 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4B63F216EA62400D91440 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F160EA712155518E000AD184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F160EA732155518E000AD184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1A3E09A215D7AD10037BFAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1E4B63F216EA62400D91440 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				F138DB30215D992100EC8D39 /* WelcomePage.swift */,
 				F138DB32215D997300EC8D39 /* SignUp.swift */,
 				F138DB34215D9A0300EC8D39 /* UserHome.swift */,
+				F1E4B63F216EA62400D91440 /* Login.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E4B640216EA62400D91440 /* Login.swift in Sources */,
 				F138DB31215D992100EC8D39 /* WelcomePage.swift in Sources */,
 				F138DB33215D997300EC8D39 /* SignUp.swift in Sources */,
 				F138DB38215DA50100EC8D39 /* User.swift in Sources */,

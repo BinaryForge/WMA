@@ -57,11 +57,11 @@ class SignUp: UIViewController{
     @IBAction func employerButton(_ sender: UIButton) {
         if sender.isSelected{
             sender.isSelected = false
-             employerCheck = sender.isSelected
+            employerCheck = sender.isSelected
             
         }else{
             sender.isSelected = true
-             employerCheck = sender.isSelected
+            employerCheck = sender.isSelected
         }
         if checkBoth() == true{
             sender.isSelected = false
